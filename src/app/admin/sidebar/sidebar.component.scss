@@ -1,0 +1,87 @@
+*{
+    // font-family: sans-serif;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+mat-icon{
+    color:grey;
+}
+.top{
+    margin-top: 15px;
+    padding-left: 170px;
+}
+.menu{
+    display: flex;
+    flex-direction: column;
+}
+
+.user{
+    text-align: center;
+    font-weight: 800;
+    margin-bottom: 50px;
+    position: relative;
+    .name{
+        color: #fff;
+    }
+    .mail{
+        color: lightgray;
+    }
+    button{
+        background-color: transparent;
+        outline: none;
+        border: none;
+        color: rgb(1, 166, 255);
+        position: absolute;
+        top:70px;
+        cursor: pointer;
+        opacity: 0;
+        
+    }
+    
+}
+
+
+.user img:hover ~ button,.user button:hover{
+    opacity: 1;
+}
+.user img{
+    margin-top: 20px;
+    width:70px;
+    height:70px;
+    border-radius: 50%;
+}
+.menu-head{
+    color:#4646b0;
+    text-transform: uppercase;
+    font-weight: 900;
+    margin-left: 40px;
+    margin-bottom: 20px;
+}
+
+.menuItems{
+    .menuButton{
+        display: flex;
+
+        align-items: center;
+        width:100%;
+        position: relative;
+        padding-left: 40px;
+        margin-bottom: 10px;
+        background-color: transparent;
+        transition: all 0.3s ease;
+        border: none;
+        cursor: pointer;
+        span{
+            margin-left: 5px;
+            color: gray;
+        }
+    }
+    .menuButton:hover{
+        background: #2c3344;
+        transition: all 0.3s ease;
+    }
+    .menuButton:focus{
+        background: #2c3344;
+        transition: all 0.3s ease;
+    }
+}
